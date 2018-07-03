@@ -1,0 +1,11 @@
+namespace TheCoach.Web.Models
+{
+	public enum MediaType
+	{
+		None = 0,
+		Text = 1,
+		Audio = Text << 1,
+		Video = Audio << 1,
+		Photo = Video << 1
+	}
+}
