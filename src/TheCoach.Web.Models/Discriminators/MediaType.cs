@@ -5,7 +5,7 @@ namespace TheCoach.Web.Models
 		None = 0,
 		Text = 1,
 		Audio = Text << 1,
-		Video = Audio << 1,
-		Photo = Video << 1
+		Video = Text << 2,
+		Photo = Text << 3
 	}
 }
