@@ -1,5 +1,7 @@
 namespace TheCoach.Web.Models.GetDTO
 {
+	using TheCoach.Web.Models.Discriminators;
+
 	public class LessonFileDto
 	{
 		public long Id { get; set; }

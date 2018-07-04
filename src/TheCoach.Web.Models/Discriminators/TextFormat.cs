@@ -1,5 +1,9 @@
 namespace TheCoach.Web.Models.Discriminators
 {
+	using Newtonsoft.Json;
+	using Newtonsoft.Json.Converters;
+
+	[JsonConverter(typeof(StringEnumConverter))]
 	public enum TextFormat
 	{
 		None = 0,
