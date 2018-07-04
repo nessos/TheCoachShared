@@ -1,6 +1,6 @@
 namespace TheCoach.Web.Models.GetDTO
 {
-	public class CategoryGetDTO
+	public class CategoryDto
     {
 	    public string Title { get; set; }
 

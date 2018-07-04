@@ -1,7 +1,9 @@
 namespace TheCoach.Web.Models.GetDTO
 {
-	public class LessonDTO
+	public class LessonDto
 	{
+		public long Id { get; set; }
+
 		public string Title { get; set; }
 
 		public string Author { get; set; }
@@ -10,6 +12,6 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public decimal Price { get; set; }
 
-		public CategoryGetDTO Category { get; set; }
+		public CategoryDto Category { get; set; }
 	}
 }
