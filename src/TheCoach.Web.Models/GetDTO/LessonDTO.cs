@@ -16,6 +16,6 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public CategoryDto Category { get; set; }
 
-		public List<LessonFileDto> Lessons { get; set; }
+		public List<LessonFileDto> LessonFiles { get; set; }
 	}
 }
