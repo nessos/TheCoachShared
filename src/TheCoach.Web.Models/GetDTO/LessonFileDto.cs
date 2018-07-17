@@ -16,6 +16,8 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public LessonDto Playlist { get; set; }
 
+		public string Language { get; set; }
+
 		public int Order { get; set; }
 
 		public float Speed { get; set; }
