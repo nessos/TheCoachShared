@@ -18,6 +18,8 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public int Order { get; set; }
 
+		public int Repeat { get; set; }
+
 		public float Speed { get; set; }
 	}
 }
