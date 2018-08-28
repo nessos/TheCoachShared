@@ -21,5 +21,7 @@ namespace TheCoach.Web.Models.GetDTO
 		public int Repeat { get; set; }
 
 		public float Speed { get; set; }
+
+		public bool IsUploaded { get; set; }
 	}
 }
