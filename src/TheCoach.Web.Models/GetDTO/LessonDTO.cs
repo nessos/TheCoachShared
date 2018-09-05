@@ -14,6 +14,8 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public decimal Price { get; set; }
 
+		public int Repeat { get; set; }
+
 		public CorporationDto Corporation { get; set; }
 
 		public CategoryDto Category { get; set; }
