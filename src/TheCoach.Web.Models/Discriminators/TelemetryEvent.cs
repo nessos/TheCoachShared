@@ -2,9 +2,10 @@ namespace TheCoach.Web.Models.Discriminators
 {
 	public enum TelemetryEvent
 	{
-		LocalPlaylistCreated = 0,
-		PlaylistDownloaded = 1,
-		PlaylistStarted = 2,
-		PlaylistStopped = 3,
+		Unknown = 0,
+		LocalPlaylistCreated = 1,
+		PlaylistDownloaded = 2,
+		PlaylistStarted = 3,
+		PlaylistStopped = 4,
 	}
 }
