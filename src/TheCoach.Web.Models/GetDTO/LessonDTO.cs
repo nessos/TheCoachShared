@@ -16,6 +16,8 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public int Repeat { get; set; }
 
+		public double SizeMB { get; set; }
+
 		public CorporationDto Corporation { get; set; }
 
 		public CategoryDto Category { get; set; }
