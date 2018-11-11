@@ -6,7 +6,7 @@ namespace TheCoach.Web.Models.GetDTO
 	{
 		public long Id { get; set; }
 
-		public long ParentLessonId { get; set; }
+		public long ParentLessonFileId { get; set; }
 
 		public MediaType MediaType { get; set; }
 
