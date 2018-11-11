@@ -6,6 +6,8 @@ namespace TheCoach.Web.Models.GetDTO
 	{
 		public long Id { get; set; }
 
+		public long ParentLessonId { get; set; }
+
 		public MediaType MediaType { get; set; }
 
 		public string Title { get; set; }
@@ -23,5 +25,7 @@ namespace TheCoach.Web.Models.GetDTO
 		public float Speed { get; set; }
 
 		public bool IsUploaded { get; set; }
+
+		public bool IsFolder { get; set; }
 	}
 }
