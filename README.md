@@ -1,0 +1,3 @@
+# Shared DTOs for The Coach API
+
+[![Build Status](https://dev.azure.com/nessos/NessosShared/_apis/build/status/InternalNugets/The%20Coach?branchName=master)](https://dev.azure.com/nessos/NessosShared/_build/latest?definitionId=3&branchName=master)[![TheCoach.Web.Models package in NessosShared feed in Azure Artifacts](https://feeds.dev.azure.com/nessos/_apis/public/Packaging/Feeds/e558e9f6-f293-4afa-8d13-4da2ba22e073/Packages/093a9b38-8b0b-4e5d-9bad-99bbc8c4eaf8/Badge)](https://dev.azure.com/nessos/NessosShared/_packaging?_a=package&feed=e558e9f6-f293-4afa-8d13-4da2ba22e073&package=093a9b38-8b0b-4e5d-9bad-99bbc8c4eaf8&preferRelease=true)
