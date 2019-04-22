@@ -1,0 +1,55 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - src/*
+
+pool:
+  vmImage: vs2019-win2019
+
+variables:
+  - group: commonVariables
+  - name: Version
+    value: '$(VersionMajor).$(VersionMinor).$(VersionPatch)'
+
+steps:
+- task: DotNetCoreCLI@2
+  name: dotnetRestore
+  displayName: "Restoring nugets..."
+  inputs:
+    command: 'restore'
+    verbosityRestore: 'Normal'
+
+- task: DotNetCoreCLI@2
+  name: dotnetBuild
+  displayName: "Building project..."
+  inputs:
+    command: 'build'
+    arguments: '--no-restore'
+
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    searchPatternPack: 'src/*/*.csproj'
+    versioningScheme: 'byEnvVar'
+    versionEnvVar: 'Version'
+    verbosityPack: 'Normal'
+
+- task: PublishBuildArtifacts@1
+  name: publishToFeed
+  displayName: "Publishing artifacts..."
+  inputs:
+    ArtifactName: 'drop'
+
+- task: DotNetCoreCLI@2
+  name: dotnetPushNuget
+  displayName: "Pushing nugets to feed..."
+  inputs:
+    command: 'push'
+    packagesToPush: '$(build.artifactStagingDirectory)/*.nupkg'
+    verbosityPack: 'Minimal'
+    feedPublish: 'NessosShared'
