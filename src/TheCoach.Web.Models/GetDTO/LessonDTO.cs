@@ -23,5 +23,8 @@ namespace TheCoach.Web.Models.GetDTO
 		public CategoryDto Category { get; set; }
 
 		public List<LessonFileDto> LessonFiles { get; set; }
+
+		public string GooglePlayProductId { get; set; }
+		public string AppStoreProductId { get; set; }
 	}
 }
