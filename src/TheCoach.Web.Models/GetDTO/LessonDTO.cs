@@ -26,5 +26,7 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public string GooglePlayProductId { get; set; }
 		public string AppStoreProductId { get; set; }
+
+		public bool Purchased { get; set; }
 	}
 }
