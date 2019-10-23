@@ -17,4 +17,10 @@ namespace TheCoach.Web.Models.Binding
 		public string ConfirmPassword { get; set; }
 
 	}
+
+	public class UpdateProfileBindingModel
+	{
+		public string FirstName { get; set; }
+		public string LastName { get; set; }
+	}
 }
