@@ -9,5 +9,7 @@ namespace TheCoach.Web.Models.GetDTO
 		public string Description { get; set; }
 
 		public string ImageUrl { get; set; }
+
+		public string FrontPageImageUrl { get; set; }
 	}
 }
