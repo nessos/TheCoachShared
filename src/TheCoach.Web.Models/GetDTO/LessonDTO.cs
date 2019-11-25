@@ -18,6 +18,10 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public double SizeMB { get; set; }
 
+		public string WallpaperUrl { get; set; }
+
+		public string IntroVideoUrl { get; set; }
+
 		public CorporationDto Corporation { get; set; }
 
 		public CategoryDto Category { get; set; }
