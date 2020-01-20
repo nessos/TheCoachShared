@@ -27,5 +27,7 @@ namespace TheCoach.Web.Models.GetDTO
 		public bool IsUploaded { get; set; }
 
 		public bool IsFolder { get; set; }
+
+		public bool IsFreeContent { get; set; }
 	}
 }
