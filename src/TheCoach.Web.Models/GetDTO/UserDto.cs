@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TheCoach.Web.Models.GetDTO
 {
-	public class UserDto
+	public class NotificationUserDto
 	{
 		public string Id { get; set; }
 
@@ -12,5 +12,9 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public string FirstName { get; set; }
 		public string LastName { get; set; }
+		public string NotificationToken { get; set; }
+		public string AppVersion { get; set; }
+		public string DeviceInfo { get; set; }
+		public string DeviceTypeId { get; set; }
 	}
 }
