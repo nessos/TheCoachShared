@@ -6,6 +6,8 @@ namespace TheCoach.Web.Models.GetDTO
 	{
 		public long Id { get; set; }
 
+		public int Order { get; set; }
+
 		public string Title { get; set; }
 
 		public string Author { get; set; }
@@ -30,6 +32,10 @@ namespace TheCoach.Web.Models.GetDTO
 
 		public string GooglePlayProductId { get; set; }
 		public string AppStoreProductId { get; set; }
+
+		public bool IsBundle { get; set; }
+		public string BundleLessonsGooglePlayProductIds { get; set; }
+		public string BundleLessonsAppStoreProductIds { get; set; }
 
 		public bool Purchased { get; set; }
 	}
